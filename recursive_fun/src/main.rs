@@ -14,9 +14,13 @@ fn main() {
     let mut out = io::BufWriter::new(stdout.lock());
 
     // Write to the `out` sink
-    write!(out, "Enter a number to recursive add all smaller numbers to it: ").ok();
+    write!(
+        out,
+        "Enter a number to recursive add all smaller numbers to it: "
+    )
+    .ok();
 
-    // The `write!` and `writeln!` macros need to be flushed 
+    // The `write!` and `writeln!` macros need to be flushed
     // to put output on the defined sink
     out.flush().unwrap();
 
@@ -34,7 +38,7 @@ fn main() {
 fn recursive_sum(n: usize) -> usize {
     // Self Explanatory
     if n == 0 {
-        return n
+        return n;
     }
 
     // If `n != 0`, then we call the function again with `n - 1`
