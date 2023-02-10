@@ -1,7 +1,7 @@
 // Using the standard library's io and str modules
 use std::{io::prelude::*, str};
 
-// Definig the Scanner struct
+// Defining the Scanner struct
 pub struct Scanner<R> {
     // Reader
     pub reader: R,
