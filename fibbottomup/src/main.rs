@@ -15,6 +15,7 @@ fn fibbottomup(n: u128) -> u128 {
     if n < 2 {
         return n;
     }
+
     let mut fib_cache = vec![0; (n + 1) as usize];
 
     fib_cache[0] = 0;
